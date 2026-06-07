@@ -1,19 +1,19 @@
 export default function App() {
   const stories = [
     {
-      title: "Fall Line News Launches",
+      title: "Fall Line News Launches Regional Coverage Initiative",
       summary:
-        "Fall Line News is building a regional news network focused on Augusta, the CSRA, weather, infrastructure, and community reporting."
+        "Fall Line News is an independent regional news project focused on Augusta, the Central Savannah River Area, and the communities connected by the Fall Line. The project combines local history, current events, weather monitoring, infrastructure reporting, and community stories into a single platform designed to serve the region."
     },
     {
-      title: "Augusta History Project",
+      title: "Why Augusta Matters",
       summary:
-        "Local stories, photographs, and memories are being collected to preserve the history of Augusta and the Fall Line region."
+        "Few cities in the Southeast have a history as deep and diverse as Augusta. From Fort Augusta and the river trade to the canal system, textile mills, military installations, medicine, and technology, Augusta has played a significant role in the development of the region."
     },
     {
-      title: "Station Development Continues",
+      title: "Building a Regional Weather and Monitoring Network",
       summary:
-        "Work continues on weather monitoring, regional alerts, multimedia reporting, and future broadcast capabilities."
+        "Fall Line News is developing systems that will eventually provide weather monitoring, regional alerts, transportation updates, and infrastructure reporting throughout the CSRA and Fall Line region."
     }
   ];
 
@@ -29,11 +29,14 @@ export default function App() {
       <header
         style={{
           padding: "20px",
-          borderBottom: "1px solid #333"
+          borderBottom: "1px solid #333",
+          background: "#0a1220"
         }}
       >
-        <h1>FALL LINE NEWS</h1>
-        <p>Regional Operations Network</p>
+        <h1 style={{ margin: 0 }}>FALL LINE NEWS</h1>
+        <p style={{ marginTop: "8px" }}>
+          Regional Operations Network
+        </p>
       </header>
 
       <img
@@ -62,8 +65,9 @@ export default function App() {
             style={{
               background: "#1b222d",
               padding: "20px",
-              marginBottom: "15px",
-              borderRadius: "8px"
+              marginBottom: "20px",
+              borderRadius: "8px",
+              border: "1px solid #2c3645"
             }}
           >
             <h3>{story.title}</h3>
@@ -77,6 +81,17 @@ export default function App() {
           Fall Line News is an independent regional news initiative serving
           Augusta, the Central Savannah River Area, and the communities of the
           Fall Line region.
+        </p>
+
+        <p>
+          Coverage includes local history, weather, infrastructure,
+          transportation, public safety, industry, culture, and the stories of
+          the people who call this region home.
+        </p>
+
+        <p>
+          Reporting from the Fall Line — where nearly 300 years of culture,
+          history, and industry meet.
         </p>
       </section>
     </div>
